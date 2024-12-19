@@ -32,7 +32,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/theme.scss"
+              "src/assets/scss/theme.scss",
+              "src/assets/vendors/flatpickr/flatpickr.min.css"
             ],
             "scripts": [
               "src/assets/vendors/popper/popper.min.js",
@@ -110,7 +111,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/theme.scss"
+              "src/assets/scss/theme.scss",
+              "src/assets/vendors/flatpickr/flatpickr.min.css"
             ],
             "scripts": [
               "src/assets/vendors/popper/popper.min.js",

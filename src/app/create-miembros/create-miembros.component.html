@@ -1,1 +1,102 @@
-<p>create-miembros works!</p>
+<div class="container">
+    <div class="mt-5">
+        <div class="row">
+            <form action="">
+                <div class="row">
+
+                    <div class="mb-3">
+                        <label class="form-label" for="iglesiaSelect">Iglesia*</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="nombreInput">Nombre*</label>
+                        <input class="form-control" id="nombreInput" type="text" placeholder="...." />
+                        <!-- <div class="text-danger">Looks good!</div> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="nombreInput">Apellido Paterno*</label>
+                        <input class="form-control" id="nombreInput" type="text" placeholder="...." />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="nombreInput">Apellido Materno</label>
+                        <input class="form-control" id="nombreInput" type="text" placeholder="...." />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="fechaNac">Fecha Nacimiento</label>
+                        <input class="form-control" id="fechaNac" type="date" placeholder="dd/mm/yy" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="Estadocivil">Estado Civil*</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="direccionTextarea">Direccion</label>
+                        <textarea class="form-control" id="direccionTextarea" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" id="flexRadioDefaultHombre" type="radio"
+                                name="flexRadioDefault" value="H"  />
+                            <label class="form-check-label" for="flexRadioDefaultHombre">Hombre</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="flexRadioDefaultMujer" type="radio"
+                                name="flexRadioDefault" value="M"  />
+                            <label class="form-check-label" for="flexRadioDefaultMujer">Mujer</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="Estadocivil">Categoria*</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="telefono">Telefono</label>
+                        <input class="form-control" id="telefono" type="tel" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="correo">Correo</label>
+                        <input class="form-control" id="correo" type="email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="fechaMatri">Fecha Matrimonio</label>
+                        <input class="form-control" id="fechaMatri" type="date" placeholder="dd/mm/yy" />
+                    </div>
+
+                    <div>
+                        <button class="btn btn-secondary me-1 mb-1" type="button" (click)="dismiss()">Cancelar <i class="fa fa-times"></i> </button>
+                        <button class="btn btn-primary me-1 mb-1" type="submit">Aceptar <i class="fa fa-save"></i> </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

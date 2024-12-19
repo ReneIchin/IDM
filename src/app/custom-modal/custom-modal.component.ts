@@ -13,10 +13,10 @@ import { NgbModal,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap'; // Importa
     <div class="modal-body">
     <ng-container *ngComponentOutlet="dynamicComponent"></ng-container>
     </div>
-    <div class="modal-footer">
+    <!-- <div class="modal-footer">
     <button type="button" class="btn btn-secondary" (click)="dismiss()">Cancelar</button>
     <button type="button" class="btn btn-primary" (click)="close()">Aceptar</button>
-    </div>
+    </div> -->
   `,
   styleUrls: ['./custom-modal.component.scss']
 })
@@ -24,7 +24,8 @@ export class CustomModalComponent {
   @Input() title: string = '';
   @Input() content: string = '';
   @Input() dynamicComponent!: any; // Recibirá el componente dinámico a mostrar
-  constructor(public modal: NgbModal,public activeModal: NgbActiveModal) {}
+
+  constructor(public modal: NgbModal, public activeModal: NgbActiveModal) {}
 
   close() {
     this.activeModal.close();  // Cierra el modal desde dentro del componente

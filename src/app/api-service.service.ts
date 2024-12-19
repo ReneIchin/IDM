@@ -61,13 +61,14 @@ export class ApiServiceService {
     const options = {
       headers,
       params: new HttpParams({ fromObject: params })
-    };
-  
-    // Imprime los encabezados y opciones para verificar su formato
-    console.log('Headers:', headers);
-    console.log('Options:', options);
-  
+    };  
     return this.http.get<T>(url, options);
+  }
+
+  getObject<T>(endpoint: string, body: any): Observable<T> {
+    const url = `${this.baseUrl}/${endpoint}`;
+    const headers = this.createHeaders(endpoint); // Asegúrate de que los encabezados son correctos
+    return this.http.post<T>(url, body, { headers });
   }
   
   // POST: Enviar datos
